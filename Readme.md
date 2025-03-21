@@ -8,16 +8,16 @@ Este repositorio contiene un entorno de trabajo con archivos que  seguramente se
 ### Archivos
 - Dockerfile  
     con este archivo se genera la imagen de Node, se podría usar de manera independiente pero está pensado para que la imagen se cree con el docker-compose.yaml. Hace lo siguiente:
-    1. FROM node:23  
+    * FROM node:23  
     usa una imagen oficial de node con una version determinada
     
-    2. WORKDIR /usr/src/app  
+    * WORKDIR /usr/src/app  
     establece el directorio de la app dentro del contenedor
     
-    3. COPY package* ./  
+    * COPY package* ./  
     copia los archivo package* para instalar las dependencias y demas configuraciones iniciales en la carpeta raiz definida con WORKDIR
     
-    4. RUN npm install  
+    * RUN npm install  
     instala las dependencias
 
 
@@ -30,15 +30,15 @@ This repository contains a working environment with files that will likely be mo
 ### Files  
 - Dockerfile  
     This file generates the Node image. It could be used independently, but it's designed to be created with docker-compose.yaml. It does the following:  
-    1. FROM node:23  
+    * FROM node:23  
     Uses an official Node image with a specific version
 
-    2. WORKDIR /usr/src/app  
+    * WORKDIR /usr/src/app  
     Sets the app directory within the container
 
-    3. COPY package* ./  
+    * COPY package* ./  
     Copies the package* files to install the dependencies and other initial configurations in the root folder defined with WORKDIR
 
-    4. RUN npm install  
+    * RUN npm install  
     Installs the dependencies
 
