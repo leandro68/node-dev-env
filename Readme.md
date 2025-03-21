@@ -6,7 +6,7 @@
 Este repositorio contiene un entorno de trabajo con archivos que  seguramente serán modificados según las necesidades del proyecto, pero que también sirven como punto de partida para comenzar a trabajar en un nuevo proyecto de nodo, utilizando imágenes y contenedores en Docker.
 
 ### Archivos
-- Dockerfile  
+#### Dockerfile  
     con este archivo se genera la imagen de Node, se podría usar de manera independiente pero está pensado para que la imagen se cree con el docker-compose.yaml. Hace lo siguiente:
     * FROM node:23  
     usa una imagen oficial de node con una version determinada
@@ -28,7 +28,7 @@ Este repositorio contiene un entorno de trabajo con archivos que  seguramente se
 This repository contains a working environment with files that will likely be modified according to the project's needs, but which also serve as a starting point for beginning work on a new node project, using Docker images and containers.
 
 ### Files  
-- Dockerfile  
+#### Dockerfile  
     This file generates the Node image. It could be used independently, but it's designed to be created with docker-compose.yaml. It does the following:  
     * FROM node:23  
     Uses an official Node image with a specific version
